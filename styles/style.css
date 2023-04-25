@@ -15,6 +15,7 @@
   max-height: 756px;
 display: flex;
 background-color: #f2f2f2;
+position: relative;
   
   /* выше установили ограничения для секции */
 }
@@ -26,6 +27,7 @@ height: 32px;
 position: absolute;
 top: 30px;
 left: 64px;
+z-index: 3;
 }
 
  .header__title{
@@ -78,6 +80,7 @@ align-items: center;
   justify-content: space-between;
   width: 80%;
   margin: 100px auto;
+  position: relative;
 
 }
 .two-columns__brief{
@@ -110,6 +113,7 @@ align-items: center;
  flex-direction: column;
  margin: 100px auto;
  align-items: center;
+ position: relative;
 }
 .section__title{
   text-align: center;
@@ -155,13 +159,14 @@ margin-top: 20px;
   display: flex;
   flex-direction: column;
   position: relative;
+  background-color: #f2f2f2;
   }
 .feynman__title{
  width: 648px;
  font-size: 120px;
  font-weight: 600;
  z-index: 4;
- margin: 0 auto;
+ margin: 100px auto 0;
  text-align: center;
 }
 .feynman__subtitle{
@@ -177,6 +182,7 @@ z-index: 4;
   line-height: 51px;
   font-size: 36px;
   font-style: normal;
+  color: #2f80ed;
   position: absolute;
   right: 48px;
   z-index: 4;
@@ -211,7 +217,7 @@ z-index: 4;
   margin-top: 80px;
 }
 .section-title__theme_dark{
-  z-index: 2;
+  z-index: 3;
 }
 .table__theme_dark{
   z-index: 2;
@@ -230,6 +236,8 @@ z-index: 4;
   background-color: #1f1f1f;
   color: #f2f2f2;
   display: flex;
+  position: relative;
+ 
 }
 .footer__columns{
   width: 90%;
@@ -270,18 +278,22 @@ font-style: normal;
   line-height: 30px;
   font-size: 18px;
   font-weight: 600;
+  margin-bottom: 20px;
 }
 .footer__column-link{
   line-height: 30px;
   font-size: 18px;
   font-style: normal;
+  margin: 0;
+
 }
 .footer__column_content_social{
   display: flex;
   flex-direction: column;
 }
-.footer__social_icon{
+.footer__social-icon{
   width: 16px;
   height: 16px;
+  
 
 }

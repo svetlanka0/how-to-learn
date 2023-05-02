@@ -13,7 +13,7 @@
     <div class="page">
       <header class="header">
         <img
-          class="logo__place_header"
+          class="logo logo_place_header"
           src="images/logo_place_header.svg"
           alt="Логотип"
         />
@@ -106,7 +106,7 @@
         <section class="feynman">
           <h2 class="feynman__title">Метод Фейнмана</h2>
           <p class="feynman__subtitle">Выучить и не забыть.</p>
-          <p class="feynman__link"><a href="#">Подробнее →</a></p>
+          <a href="#" class="feynman__link">Подробнее →</a>
           <img src="images/feynman.png" alt="Фейнман" class="feynman__image" />
         </section>
         <section class="kaufman">
@@ -116,7 +116,7 @@
           <p class="section-subtitle section-subtitle_theme_dark">
             от Джоша Кауфмана
           </p>
-          <div class="table table__theme_dark">
+          <div class="table table_theme_dark">
             <div class="table__cell table__cell_theme_dark">
               <h3 class="table__heading table__heading_theme_dark">1</h3>
               <p class="table__text table__text_theme_dark">
@@ -178,18 +178,20 @@
               </p>
             </div>
           </div>
+          <div>
           <img
           src="images/kaufman-triangle.svg"
           alt="Картинка"
           class="kaufman__triangle"
         />
+      </div>
         </section>
       </main>
       <footer class="footer">
         <div class="footer__columns">
           <div class="footer__column footer__column_content_copyright">
             <img
-              class="logo logo_place_foother"
+              class="logo logo_place_footer"
               src="images/logo_place_footer.svg"
               alt="Логотип"
             />
@@ -198,39 +200,34 @@
           <div class="footer__column footer__column_content_info">
             <h2 class="footer__column-heading">О Практикуме</h2>
             <nav class="menu">
-              <ul class="menu">
-            <li class="footer__column-links"><a href="#">Главная</a></li>
-            <li class="footer__column-links"> <a href="#">Компетенция</a> </li>
-            <li class="footer__column-links"><a href="#">Наставники</a></li>
+              <ul class="footer__column-links">
+            <li><a href="#" class="footer__column-link">Главная</a></li>
+            <li> <a href="#" class="footer__column-link">Компетенция</a> </li>
+            <li><a href="#" class="footer__column-link">Наставники</a></li>
               </ul>
           </nav>
           </div>
           <div class="footer__column footer__column_content_social">
             <h2 class="footer__column-heading">Соцсети</h2>
-            <p class="footer__column-links">
-              <a href="#"
+            <div class="footer__column-links">
+              <nav class="menu">
+                <ul class="footer__column-links">
+              <li><a href="#" class="footer__column-link"
                 ><img
                   src="images/youtube-icon.svg"
                   alt="Логотип"
-                  class="footer__social-icon" /></a
-              >Youtube
-            </p>
-            <p class="footer__column-links">
-              <a href="#">
+                  class="footer__social-icon"/>Youtube</a></li>
+              <li><a href="#" class="footer__column-link">
                 <img
                   src="images/vk_color_white.svg"
                   alt="Логотип"
-                  class="footer__social-icon" /></a
-              >Вконтакте
-            </p>
-            <p class="footer__column-links">
-              <a href="#">
+                  class="footer__social-icon" />Вконтакте</a></li>
+              <li><a href="#" class="footer__column-link">
                 <img
                   src="images/tiktok-icon.svg"
                   alt="Логотип"
-                  class="footer__social-icon" /></a
-              >TikTok
-            </p>
+                  class="footer__social-icon" />TikTok</a></li>
+            </div>
           </div>
         </div>
       </footer>

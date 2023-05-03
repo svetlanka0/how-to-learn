@@ -80,7 +80,7 @@
   right: 0;
   bottom: 0;
   z-index: 2;
-  object-fit: scale-down;
+  object-fit: cover;
 }
 
 .two-columns {
@@ -154,6 +154,7 @@
   margin: 0 auto;
   flex-wrap: wrap;
   justify-content: space-between;
+  position: relative;
 }
 
 
@@ -170,7 +171,8 @@
 }
 
 .table__text {
-  margin: 20px 0;
+  margin: 0;
+  margin-top: 20px ;
   line-height: 1.2;
   font-size: 18px;
   font-style: normal;
@@ -253,14 +255,21 @@
 }
 
 .kaufman__triangle {
+  background-image: url(../images/kaufman-triangle.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
   width: 877px;
   height: 877px;
   display: flex;
   position: absolute;
   top: 0;
+  bottom: 90px;
   right: -210px;
   z-index: -1;
+  overflow: hidden;
+  object-fit: cover;
 }
+
 
 .footer {
   min-height: 350px;
